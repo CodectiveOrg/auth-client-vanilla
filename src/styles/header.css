@@ -1,0 +1,28 @@
+body > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  nav {
+    > ul {
+      list-style: none;
+
+      display: flex;
+      gap: 1rem;
+
+      > li {
+        a {
+          color: inherit;
+
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  align-items: start;
+  gap: 1rem;
+
+  inline-size: min(50rem, 100% - 2rem);
+
+  margin-block: 1rem;
+  margin-inline: auto;
+}
