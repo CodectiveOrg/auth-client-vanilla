@@ -78,3 +78,7 @@ body {
   margin-block: 1rem;
   margin-inline: auto;
 }
+
+#error {
+  color: var(--color-danger);
+}
