@@ -1,7 +1,9 @@
 import { SettingsModel } from "../models/settings.model.ts";
 
 async function fetchSettings(): Promise<SettingsModel> {
-  const response = await fetch("http://localhost:5001/dashboard/settings");
+  const response = await fetch("http://localhost:5001/dashboard/settings", {
+    credentials: "include",
+  });
 
   if (!response.ok) {
     window.location.replace("/auth/sign-in/");
